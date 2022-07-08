@@ -2,7 +2,7 @@ ARG TF_VERSION='latest'
 
 FROM --platform=linux/amd64 hashicorp/terraform:${TF_VERSION}
 
-RUN $PATH=/usr/local/bin/:$PATH
+RUN export PATH=/usr/local/bin/:$PATH
 RUN apk --no-cache add curl gnupg
 
 WORKDIR /usr/local/aws-cli
