@@ -17,4 +17,4 @@ RUN gpg --verify awscliv2.sig awscliv2.zip
 
 RUN unzip ./awscliv2.zip
 RUN ./aws/install
-RUN aws --version
+RUN /usr/local/bin/aws --version
