@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        tfVersion: ['1.7.4']
+        tfVersion: ['1.9.0']
     env:
       IMAGE_NAME: devanarchy/terraform-aws-cli:tf-${{ matrix.tfVersion }}
     steps:
